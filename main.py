@@ -5,10 +5,10 @@ import time
 
 
 # Initialize webcam
-#1
+vid=cv2.VideoCapture(0)
 
 # Initialize hand tracking
-#2
+#
 
 # Initialize paddle and puck positions
 #3
@@ -102,4 +102,5 @@ while True:
         break
 
 # Release the webcam and close all windows
-#24
+vid.release()
+cv2.destroyAllWindows()
